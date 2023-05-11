@@ -3,6 +3,14 @@ body {
   margin: 0%;
 }
 
+p, a, h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 /*$dark-green*/
 /*$ligth-blue*/
 /*$ligth-green*/
@@ -18,9 +26,42 @@ header .logo {
   margin: 0 auto;
 }
 
+.presentation {
+  background-color: #D2D2D2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.presentation h2 {
+  padding-top: 40px;
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.presentation P {
+  padding-bottom: 27px;
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.presentation button {
+  margin: 0 75px 57px 82px;
+  padding: 13px 19px;
+  color: white;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+.presentation button:hover {
+  background-image: linear-gradient(193.33deg, #a36fe1 -11.44%, #ff98e2 123.93%);
+}
+
 .search {
   width: 100%;
-  background-color: gray;
+  background-color: #EAEAEA;
   padding: 15px 0;
   display: flex;
   justify-content: center;

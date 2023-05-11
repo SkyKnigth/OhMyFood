@@ -2,7 +2,13 @@ body{
     padding: 0%;
     margin: 0%;
 }
+    p,a,h2,h3{
+        font-family: 'Roboto', sans-serif;
 
+    }
+    h1{
+        font-family: 'Shrikhand', cursive;
+    }
 
     $dark-green:#008766; /*$dark-green*/
     $ligth-blue:#89C8FA; /*$ligth-blue*/
