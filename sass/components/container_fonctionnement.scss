@@ -1,0 +1,22 @@
+.container_fonctionnement{
+    width: 90%;
+    margin: 0 auto;
+    
+    .fonctionnements{
+        
+        .fonctionnement-item{
+            background: #F7F7F7;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            padding-top: 28px;
+            padding-bottom: 28px;
+            margin-bottom: 24px;
+        }
+        .number{
+            background-color: purple;
+            padding: 8px;
+        }
+    }
+    
+}
+
