@@ -4,10 +4,14 @@ body{
 }
     p,a,h2,h3{
         font-family: 'Roboto', sans-serif;
+        color: black;
 
     }
     h1{
         font-family: 'Shrikhand', cursive;
+    }
+    a{
+        text-decoration: none;
     }
 
     $dark-green:#008766; /*$dark-green*/

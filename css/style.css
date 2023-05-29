@@ -5,10 +5,15 @@ body {
 
 p, a, h2, h3 {
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 h1 {
   font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*$dark-green*/
@@ -24,6 +29,23 @@ header .logo {
   width: 50%;
   display: block;
   margin: 0 auto;
+}
+
+FOOTER {
+  background-color: black;
+  color: white;
+  padding: 4% 0 4% 25px;
+}
+FOOTER ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+FOOTER h3 {
+  color: white;
+  font-family: "Shrikhand";
+}
+FOOTER a {
+  color: white;
 }
 
 .presentation {
@@ -89,8 +111,92 @@ header .logo {
   margin-bottom: 24px;
 }
 .container_fonctionnement .fonctionnements .number {
-  background-color: purple;
-  padding: 8px;
+  background-color: #9356DC;
+  padding: 4px 8px;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+.container_fonctionnement .fonctionnements i {
+  padding: 0 23px;
+}
+.container_fonctionnement .fonctionnements .titre {
+  font-weight: 600;
+  font-size: 16px;
+}
+.container_fonctionnement .fonctionnements #icone_magasin {
+  color: #9356DC;
+}
+
+.container_restaurants {
+  background-color: #D2D2D2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.container_restaurants .carte {
+  width: 100%;
+  height: 251px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.container_restaurants .carte img {
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.container_restaurants .carte span {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background-color: #99E2D0;
+}
+.container_restaurants .carte h3 {
+  padding-left: 16px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+.container_restaurants .carte p {
+  padding-left: 16px;
+  margin: 6px 0;
+}
+.container_restaurants .like {
+  padding-left: 85%;
+  margin-top: -40px;
+}
+.container_restaurants .liked {
+  padding-left: 85%;
+  margin-top: -40px;
+}
+
+.like .fa-regular.fa-heart {
+  opacity: 1;
+  position: relative;
+  font-size: 24px;
+}
+.like .fa-regular.fa-heart:hover .fa-solid.fa-heart {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(193.33deg, #a36fe1 -11.44%, #ff98e2 123.93%);
+  transform: scale(1);
+  opacity: 1;
+}
+.like .fa-regular.fa-heart .fa-solid.fa-heart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 1ms ease-in-out;
+}
+.like .fa-solid.fa-heart {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
