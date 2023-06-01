@@ -187,15 +187,55 @@ FOOTER a {
   opacity: 0;
 }
 
+.check {
+  background-color: #99E2D0;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  transition: all 4s ease-in-out;
+}
+
 .menu_card {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-left: 12px;
   margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 4s ease-in-out;
+}
+.menu_card:hover {
+  transition: all 4s ease-in-out;
+}
+.menu_card:hover .check {
+  display: flex;
+  opacity: 1;
+  width: 20%;
+  transition: all 4s ease-in-out;
+}
+.menu_card .content {
+  transition: all 4s ease-in-out;
+}
+.menu_card .content h3 {
+  margin-top: 12px;
+  margin-bottom: 0%;
+  transition: all 2s ease-in-out;
+}
+.menu_card .content p {
+  margin-top: 0%;
+  margin-bottom: 12px;
+  transition: all 2s ease-in-out;
+}
+.menu_card .price {
+  transition: all 4s ease-in-out;
+  display: flex;
+  align-items: flex-end;
 }
 
 button {
@@ -213,12 +253,23 @@ button:hover {
   background-image: linear-gradient(193.33deg, #a36fe1 -11.44%, #ff98e2 123.93%);
 }
 
-img {
+.img_head {
   width: 100%;
+  position: relative;
 }
 
-menu {
+.menu {
   background-color: #F6F6F6;
+  z-index: 2;
+  position: relative;
+  padding: 5% 5% 0 5%;
+  border-radius: 40px 40px 0 0;
+  margin-top: -40px;
+}
+.menu .menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

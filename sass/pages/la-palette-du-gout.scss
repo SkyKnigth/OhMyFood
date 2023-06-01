@@ -1,7 +1,21 @@
-img{
+.img_head{
     width: 100%;
+    position: relative;
 }
-menu{
+.menu{
+
     background-color: #F6F6F6;
+    z-index: 2;
+    position: relative;
+    padding: 5% 5% 0 5%;
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+    .menu-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     
 }
+
+
