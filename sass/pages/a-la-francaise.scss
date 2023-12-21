@@ -2,11 +2,13 @@
     width: 100%;
     position: relative;
 }
-/*========== Theme colors ==========*/
+/*
+/*========== Theme colors ==========
 $Primary-color: #9356DC;
 $Secondary-color: #FF79DA ;
 $Tertiary-color: #99E2D0;
-/*=============== MIXIN ===============*/
+*/
+/*=============== MIXIN ===============
 @mixin flex(
 $direction: initial,
 $justify: initial,
@@ -44,8 +46,8 @@ main {
 z-index: 0;
 margin: auto;
 }
-
-/*=============== LOADER ===============*/
+*/
+/*=============== LOADER ===============
 .loader {
 position: fixed;
 display: grid;
@@ -57,9 +59,10 @@ border-radius: 5px;
 animation: loading 300ms forwards;
 animation-delay: 4s;
 transform-origin: center;  
+*/
 
 /* Style d'arrière plan du loading 
-source : https://youtu.be/3HRvb2tLqF4?si=dAvqkS3wlmoNzTr4 */
+source : https://youtu.be/3HRvb2tLqF4?si=dAvqkS3wlmoNzTr4 
 &__background--glass {
 height: 100vh;
 width: 100vw;
@@ -76,8 +79,8 @@ border: 1px solid rgba(255, 255, 255, 0.18);
 box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-/* Style d'animation de cercle 
-source : https://youtu.be/U3hCPkV9SnU?si=dl3_HEngwzSLMRHx */ 
+ Style d'animation de cercle 
+source : https://youtu.be/U3hCPkV9SnU?si=dl3_HEngwzSLMRHx  
 &__circle {
 margin: auto;
 width: 250px;
@@ -134,6 +137,7 @@ transform: scale(0);
 display: none;
 }
 }
+*/
 
 .menu{
 
