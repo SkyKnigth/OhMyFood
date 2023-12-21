@@ -209,7 +209,7 @@ FOOTER a {
   transition: all 1s ease-in-out;
 }
 .menu_card .content {
-  width: 85%;
+  width: 90%;
 }
 .menu_card .content h3 {
   margin-top: 12px;
@@ -220,10 +220,11 @@ FOOTER a {
   margin-bottom: 12px;
 }
 .menu_card .price {
-  width: 15%;
+  width: 10%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  padding: 5% 5% 4% 0;
 }
 
 .check {
@@ -235,6 +236,7 @@ FOOTER a {
   opacity: 0;
   border-radius: 0 15px 15px 0;
   transition: all 500ms ease-in-out;
+  display: flex;
 }
 
 button {
