@@ -209,7 +209,7 @@ FOOTER a {
   transition: all 1s ease-in-out;
 }
 .menu_card .content {
-  width: 80%;
+  width: 85%;
 }
 .menu_card .content h3 {
   margin-top: 12px;
@@ -220,7 +220,7 @@ FOOTER a {
   margin-bottom: 12px;
 }
 .menu_card .price {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
