@@ -14,6 +14,19 @@ FOOTER{
         color: white;
 
     }
+    .aide{
+        display: flex;
+        align-items: center;
+        font-weight: map-get($font-weight, medium);
+        gap: 7px;
+    }
+    
+    .icons{
+        width: 23px;
+        height: 13px;
+        font-size: 13px;
+
+    }
 
     }
     

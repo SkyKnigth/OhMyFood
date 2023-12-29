@@ -54,6 +54,16 @@ FOOTER h3 {
 FOOTER a {
   color: white;
 }
+.icons {
+  width: 23px;
+  height: 13px;
+  font-size: 13px;
+
+}
+.aide{
+  font-weight: 500;
+}
+
 
 .presentation {
   background-color: #f6f6f6;
@@ -214,10 +224,18 @@ FOOTER a {
 .menu_card .content h3 {
   margin-top: 12px;
   margin-bottom: 0%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Spécifie le nombre de lignes à montrer */
+  -webkit-box-orient: vertical;
 }
 .menu_card .content p {
   margin-top: 0%;
   margin-bottom: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
 }
 .menu_card .price {
   width: 10%;
