@@ -119,6 +119,9 @@ FOOTER a {
   border-radius: 50%;
   margin-left: -10px;
 }
+.container_fonctionnement .fonctionnements .write {
+ color: white;
+}
 .container_fonctionnement .fonctionnements i {
   padding: 0 23px;
 }

@@ -15,12 +15,9 @@ FOOTER{
 
     }
     .aide{
-        display: flex;
-        align-items: center;
-        font-weight: map-get($font-weight, medium);
-        gap: 7px;
+        font-weight: 500;
     }
-    
+
     .icons{
         width: 23px;
         height: 13px;
