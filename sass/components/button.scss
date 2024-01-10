@@ -1,6 +1,6 @@
-button{
+@mixin button($padding){
     margin: 10% auto 5% auto;
-    padding: 4% 20%;
+    padding: 4% $padding;
     color: white;
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     border: none;
@@ -11,4 +11,12 @@ button{
     &:hover{
         background-image: linear-gradient(193.33deg, lighten(#9356DC,6%) -11.44%, lighten(#FF79DA,6%) 123.93%);
     }
+}
+
+.btn-home{
+    @include button(5%);
+}
+
+.btn-restaurant{
+    @include button(20%);
 }

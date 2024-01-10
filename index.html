@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/desktop.css">
     <title>Accueil</title>
 </head>
 <body>
@@ -34,7 +33,7 @@
         <section class="presentation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-            <button class="button_rounded button_color">Explorer nos restaurants</button>
+            <button class="button_rounded button_color btn-home">Explorer nos restaurants</button>
         </section>
 
         <section class="container_fonctionnement">
@@ -61,55 +60,71 @@
         <section class="container_restaurants">
             <h2>Restaurants</h2>
             
-            <a href="./la-palette-du-gout.html" class="carte">
-                <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="photo_restaurant_la_palette_du_gout" class="photo_la_palette_du_gout">
+            <div class="carte">
+                <a href="./la-palette-du-gout.html">
+                    <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="photo_restaurant_la_palette_du_gout" class="photo_la_palette_du_gout">
+                </a>
                 <span>Nouveau</span>
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-                <div class="like">
+                <a href="./la-palette-du-gout.html">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </a>
+                <div class="like">      
                     <i class="fa-regular fa-heart">
                         <i class="fa-solid fa-heart" id="icone_coeur"></i>
                     </i>
                 </div>
-            </a>
+            </div>
 
-            <a href="./la-note-enchantee.html" class="carte">
-                <img src="Images et textes Ohmyfood\images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="photo_restaurant_la_note_enchantee" class="photo_la_note_enchantee">
+            <div class="carte">
+                <a href="./la-note-enchantee.html">
+                    <img src="Images et textes Ohmyfood\images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="photo_restaurant_la_note_enchantee" class="photo_la_note_enchantee">
+                </a>
                 <span>Nouveau</span>
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
+                <a href="./la-note-enchantee.html">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                </a>
                 <div class="like">
                     <i class="fa-regular fa-heart">
                         <i class="fa-solid fa-heart" id="icone_coeur"></i>
                     </i>
                 </div>
-            </a>
+            </div>
 
-            <a href="./a-la-francaise.html" class="carte">
-                <img src="Images et textes Ohmyfood\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt="photo_restaurant_a_la_francaise" class="photo_a_la_francaise">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
+            <div class="carte">
+                <a href="./a-la-francaise.html">
+                    <img src="Images et textes Ohmyfood\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="photo_restaurant_a_la_francaise" class="photo_a_la_francaise">
+                </a>
+                <a href="./a-la-francaise.html">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                </a>
                 <div class="like">
                     <i class="fa-regular fa-heart">
                         <i class="fa-solid fa-heart" id="icone_coeur"></i>
                     </i>
                 </div>
-            </a>
+            </div>
 
-            <a href="./le-delice-des-sens.html" class="carte">
+            <div class="carte">
+                <a href="./le-delice-des-sens.html">
                 <img src="Images et textes Ohmyfood\images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="photo_restaurant_le_delice_des_sens" class="photo_le_delice_des_sens">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
+                </a>
+                <a href="./le-delice-des-sens.html">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                </a>
                 <div class="like">
                     <i class="fa-regular fa-heart">
                         <i class="fa-solid fa-heart" id="icone_coeur"></i>
                     </i>
                 </div>
-            </a>
+            </div>
         </section>
     </main>   
 </body>
@@ -118,7 +133,7 @@
     <h3>Oh my food</h3>
 
     <ul>
-        <li><i class="fa-solid fa-utensils icons"></i><a href="#">Proposer un restaurant</a></li>
+        <li><i class="fa-solid fa-utensils icons fourchette"></i><a href="#">Proposer un restaurant</a></li>
         <li><i class="fa-solid fa-hands-helping icons"></i><a href="#">Devenir un partenaire</a></li>
         <li><a href="#">Mention légales</a></li>
         <li><a href="mailto:ohfood@gmail.com">Contact</a></li>
