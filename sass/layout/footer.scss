@@ -28,5 +28,21 @@ FOOTER{
         font-size: 17px;
     }
 
-    }
+}
     
+@media screen and (min-width: 768px){
+    footer{
+        padding-right: 15px;
+        .aide{
+            display: flex;
+            gap: 70px;
+            flex-direction: row-reverse;
+            align-items: center;
+            ul{
+                display: flex;
+                gap: 15px;
+            }
+
+        }
+    }
+}

@@ -1,13 +1,16 @@
 .search{
     width: 100%;
     background-color: #EAEAEA;
-    padding: 15px 0;
+    padding: 15px 0 15px 70px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
+    gap: 15px;
+
     input{
         background-color: transparent;
         border: none;
-        width: 25%;
+        font-weight: 600;
     }
     ::placeholder{
         color: black;

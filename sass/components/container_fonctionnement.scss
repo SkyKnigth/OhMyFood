@@ -35,3 +35,34 @@
     
 }
 
+@media screen and (min-width: 768px){
+    .container_fonctionnement{
+        .fonctionnements{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .fonctionnement-item{
+                width: 48%;
+            }
+        
+        }
+
+    }
+
+}
+@media screen and (min-width: 990px){
+
+}
+@media screen and (min-width: 1200px){
+    .container_fonctionnement{
+        .fonctionnements{
+        
+            .fonctionnement-item{
+                width: 30%;
+            }
+        
+        }
+
+    }
+
+}

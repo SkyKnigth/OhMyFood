@@ -23,7 +23,7 @@ a {
 header {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   background: #FFFFFF;
-  padding: 14px 0 5px 0;
+  padding: 2% 0 2% 0;
   display: flex;
   align-items: center;
 }
@@ -31,7 +31,7 @@ header .direction {
   display: block;
 }
 header .logo {
-  width: 50%;
+  width: 200px;
   display: block;
   margin: 0 auto;
   align-items: center;
@@ -65,6 +65,21 @@ FOOTER .fourchette {
   font-size: 17px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    padding-right: 15px;
+  }
+  footer .aide {
+    display: flex;
+    gap: 70px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  footer .aide ul {
+    display: flex;
+    gap: 15px;
+  }
+}
 .presentation {
   background-color: #f6f6f6;
   display: flex;
@@ -87,14 +102,16 @@ FOOTER .fourchette {
 .search {
   width: 100%;
   background-color: #EAEAEA;
-  padding: 15px 0;
+  padding: 15px 0 15px 70px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  gap: 15px;
 }
 .search input {
   background-color: transparent;
   border: none;
-  width: 25%;
+  font-weight: 600;
 }
 .search ::placeholder {
   color: black;
@@ -133,6 +150,21 @@ FOOTER .fourchette {
   color: #9356DC;
 }
 
+@media screen and (min-width: 768px) {
+  .container_fonctionnement .fonctionnements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container_fonctionnement .fonctionnements .fonctionnement-item {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container_fonctionnement .fonctionnements .fonctionnement-item {
+    width: 30%;
+  }
+}
 .container_restaurants {
   background-color: #f6f6f6;
   display: flex;
@@ -179,6 +211,21 @@ FOOTER .fourchette {
   margin-top: -40px;
 }
 
+@media screen and (min-width: 768px) {
+  .container_restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 10%;
+  }
+  .container_restaurants h2 {
+    width: 100%;
+  }
+  .container_restaurants .carte {
+    width: 45%;
+  }
+}
 .like .fa-regular.fa-heart {
   opacity: 1;
   position: relative;
@@ -203,6 +250,12 @@ FOOTER .fourchette {
 }
 .like .fa-solid.fa-heart {
   opacity: 0;
+}
+
+.menu h2::after {
+  content: "";
+  width: 50px;
+  border-bottom: solid 3px #99E2D0;
 }
 
 .menu_card {
@@ -248,6 +301,16 @@ FOOTER .fourchette {
   padding: 5% 5% 4% 0;
 }
 
+.paiement {
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    margin: 0 150px;
+    padding: 5% 12%;
+  }
+}
 .check {
   background-color: #99E2D0;
   color: white;
@@ -261,13 +324,14 @@ FOOTER .fourchette {
 }
 
 .btn-home {
-  margin: 10% auto 5% auto;
-  padding: 4% 5%;
+  margin: 0 auto 8% auto;
+  padding: 15px 22px;
   color: white;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
 }
@@ -276,13 +340,14 @@ FOOTER .fourchette {
 }
 
 .btn-restaurant {
-  margin: 10% auto 5% auto;
-  padding: 4% 20%;
+  margin: 0 auto 8% auto;
+  padding: 15px 50px;
   color: white;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
 }
@@ -350,31 +415,23 @@ FOOTER .fourchette {
   justify-content: space-between;
 }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+@keyframes slideup {
+  from {
+    transform: translateY(20px);
     opacity: 0;
   }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
-.entree {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.menu_card {
+  animation: slideup 1.5s ease forwards;
+  opacity: 0;
+}
+
+.animation-delay-1 {
+  animation-delay: 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */
