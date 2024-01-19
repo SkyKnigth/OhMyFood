@@ -1,4 +1,4 @@
-.menu h2::after{
+.menu h2{
     content: "";
     width: 50px;
     border-bottom: solid 3px #99E2D0;
@@ -46,6 +46,7 @@
         justify-content: flex-end;
         align-items: flex-end;
         padding: 5% 5% 4% 0;
+        font-weight: 600;
     }
     
 }
@@ -58,11 +59,4 @@
         margin: 0 150px;
         padding: 5% 12%;
     }
-}
-@media screen and (min-width: 990px){
-
-}
-@media screen and (min-width: 1200px){
-
-
 }

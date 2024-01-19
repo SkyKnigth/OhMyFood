@@ -48,19 +48,22 @@
         }
 
     }
-
 }
-@media screen and (min-width: 990px){
 
-}
 @media screen and (min-width: 1200px){
     .container_fonctionnement{
+        width: 80%;
         .fonctionnements{
+            padding-bottom: 2%;
         
             .fonctionnement-item{
                 width: 30%;
             }
         
+        }
+
+        h2{
+            padding: 2% 0;
         }
 
     }

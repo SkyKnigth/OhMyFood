@@ -21,3 +21,35 @@
    
 }
 
+@media screen and (min-width: 768px){
+    .presentation h2{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 990px){
+    .presentation h2{
+        padding-top: 0px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .presentation P{
+        font-size: 25px;
+
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .presentation h2{
+        padding-top: 0px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .presentation P{
+        font-size: 16px;
+
+    }
+
+}

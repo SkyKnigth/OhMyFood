@@ -29,6 +29,9 @@ header {
 }
 header .direction {
   display: block;
+  margin-right: -20px;
+  margin-left: 20px;
+  font-size: 25px;
 }
 header .logo {
   width: 200px;
@@ -38,13 +41,16 @@ header .logo {
 }
 
 FOOTER {
-  background-color: black;
+  background-color: #353535;
   color: white;
   padding: 4% 0 4% 25px;
 }
 FOOTER ul {
   list-style-type: none;
   padding-left: 0px;
+}
+FOOTER li {
+  padding-bottom: 2%;
 }
 FOOTER h3 {
   color: white;
@@ -53,7 +59,7 @@ FOOTER h3 {
 FOOTER a {
   color: white;
 }
-FOOTER .aide {
+FOOTER .blanc {
   font-weight: 500;
 }
 FOOTER .icons {
@@ -79,6 +85,9 @@ FOOTER .fourchette {
     display: flex;
     gap: 15px;
   }
+  footer .aide .blanc {
+    padding-right: 20px;
+  }
 }
 .presentation {
   background-color: #f6f6f6;
@@ -99,6 +108,32 @@ FOOTER .fourchette {
   padding-right: 7%;
 }
 
+@media screen and (min-width: 768px) {
+  .presentation h2 {
+    padding-top: 20px;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .presentation h2 {
+    padding-top: 0px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .presentation P {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .presentation h2 {
+    padding-top: 0px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .presentation P {
+    font-size: 16px;
+  }
+}
 .search {
   width: 100%;
   background-color: #EAEAEA;
@@ -161,15 +196,24 @@ FOOTER .fourchette {
   }
 }
 @media screen and (min-width: 1200px) {
+  .container_fonctionnement {
+    width: 80%;
+  }
+  .container_fonctionnement .fonctionnements {
+    padding-bottom: 2%;
+  }
   .container_fonctionnement .fonctionnements .fonctionnement-item {
     width: 30%;
+  }
+  .container_fonctionnement h2 {
+    padding: 2% 0;
   }
 }
 .container_restaurants {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
-  padding: 4% 4% 4% 4%;
+  padding: 4% 4% 8% 4%;
 }
 .container_restaurants .carte {
   width: 100%;
@@ -190,7 +234,7 @@ FOOTER .fourchette {
   position: absolute;
   top: 3%;
   right: 3%;
-  padding: 0.5%;
+  padding: 1%;
   background-color: #99E2D0;
 }
 .container_restaurants .carte h3 {
@@ -217,13 +261,18 @@ FOOTER .fourchette {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4% 10%;
+    padding: 1% 10%;
   }
   .container_restaurants h2 {
     width: 100%;
   }
   .container_restaurants .carte {
     width: 45%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .container_restaurants .carte {
+    margin-bottom: 50px;
   }
 }
 .like .fa-regular.fa-heart {
@@ -252,7 +301,19 @@ FOOTER .fourchette {
   opacity: 0;
 }
 
-.menu h2::after {
+@media screen and (min-width: 990px) {
+  .like .fa-regular.fa-heart {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .like .fa-regular.fa-heart {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+}
+.menu h2 {
   content: "";
   width: 50px;
   border-bottom: solid 3px #99E2D0;
@@ -299,6 +360,7 @@ FOOTER .fourchette {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 5% 5% 4% 0;
+  font-weight: 600;
 }
 
 .paiement {
@@ -338,6 +400,16 @@ FOOTER .fourchette {
 .btn-home:hover {
   background-image: linear-gradient(193.33deg, #a36fe1 -11.44%, #ff98e2 123.93%);
 }
+@media screen and (min-width: 768px) {
+  .btn-home {
+    margin: 0 auto 4% auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-home {
+    margin: 0 auto 2% auto;
+  }
+}
 
 .btn-restaurant {
   margin: 0 auto 8% auto;
@@ -353,6 +425,16 @@ FOOTER .fourchette {
 }
 .btn-restaurant:hover {
   background-image: linear-gradient(193.33deg, #a36fe1 -11.44%, #ff98e2 123.93%);
+}
+@media screen and (min-width: 768px) {
+  .btn-restaurant {
+    margin: 0 auto 4% auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-restaurant {
+    margin: 0 auto 2% auto;
+  }
 }
 
 .loader-container {
@@ -426,12 +508,31 @@ FOOTER .fourchette {
   }
 }
 .menu_card {
-  animation: slideup 1.5s ease forwards;
+  animation: slideup 1s ease forwards;
   opacity: 0;
 }
 
 .animation-delay-1 {
   animation-delay: 500ms;
+}
+
+.animation-delay-2 {
+  animation-delay: 750ms;
+}
+
+@media screen and (min-width: 990px) {
+  .menu {
+    padding: 5% 10% 2% 10%;
+  }
+  .menu .menu-title {
+    justify-content: center;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu .menu-title {
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

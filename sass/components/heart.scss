@@ -27,3 +27,23 @@
         opacity: 0;
     }
 }
+
+@media screen and (min-width: 990px){
+    .like{
+        .fa-regular.fa-heart{
+            font-size: 22px;
+            padding-left: 20px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .like{
+        .fa-regular.fa-heart{
+            font-size: 26px;
+            padding-left: 20px;
+        }
+    }
+
+}
