@@ -20,7 +20,7 @@
             right: 0;
             left: 0;
             transform: scale(0);
-            transition: all 1ms ease-in-out;
+            transition: all 500ms ease-in-out;
         }
     }
     .fa-solid.fa-heart{
@@ -32,6 +32,9 @@
     .like{
         .fa-regular.fa-heart{
             font-size: 22px;
+            padding-left: 20px;
+        }
+        .fa-solid.fa-heart{
             padding-left: 20px;
         }
     }
